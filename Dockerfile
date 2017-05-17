@@ -5,7 +5,7 @@ ENV SPARK_HOME /spark
 
 WORKDIR /HelloWorld
 RUN mkdir src
-
+COPY ./javasrc ./src
 RUN mkdir bin
 RUN javac -d bin ./src/HelloWorld.java
 
